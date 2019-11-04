@@ -1,0 +1,25 @@
+---
+title: "Connor Goldman Profile"
+output: html_document
+    toc: true
+    toc_float: true
+
+---
+
+# Welcome to my home page!
+
+<img src = "photos/Welcome.jpg" style = "width: 75%">
+
+For inspiration
+
+>Do what you can, with what you have, where you are. 
+>
+>-Teddy Roosevelt
+
+
+# About me
+
+You can find out more about me [here](!
+
+
+

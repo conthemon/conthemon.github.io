@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Resume</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="about.html">About Me</a>
+</li>
+<li>
+  <a href="Resume.html">Resume</a>
+</li>
+<li>
+  <a href="mailto:&lt;cg3112@cumc.columbia.edu&gt;">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/conthemon/">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Resume</h1>
+
+</div>
+
+
+<p>Connor Goldman</p>
+<p><a href="mailto:cg3112@cumc.columbia.edu" class="email">cg3112@cumc.columbia.edu</a><br />
+PHONE: 404-829-5167</p>
+<div id="education" class="section level1">
+<h1>EDUCATION:</h1>
+<div id="columbia-university-mailman-school-of-public-health-new-york-ny-______________________-anticipated-may-2020" class="section level5">
+<h5>Columbia University Mailman School of Public Health New York, NY ______________________ Anticipated May 2020</h5>
+<p>Master of Public Health, Department: Epidemiology, Certificate: Infectious Disease</p>
+</div>
+<div id="vanderbilt-university-nashville-tn-_______________________________________________-may-2018" class="section level5">
+<h5>Vanderbilt University, Nashville, TN _______________________________________________ May 2018</h5>
+<p>Bachelor of Arts, Major: Biological Sciences Minor: Spanish</p>
+<p>• Worked up to 25 hours per week while attending school full-time</p>
+</div>
+</div>
+<div id="relevant-experience" class="section level1">
+<h1>RELEVANT EXPERIENCE:</h1>
+<div id="researchadmin.-assistant-newyork-presbyterian-hospital-new-york-ny-_______________-march-2019-present" class="section level5">
+<h5>Research/Admin. Assistant, NewYork-Presbyterian Hospital, New York, NY _______________ March 2019 – Present</h5>
+<p>• Help draft and prepare research and grant proposals</p>
+<p>• Design epidemiological research studies including observational cohort and case control studies</p>
+<p>• Organize meeting and travel schedule of Dr. Lisa Saiman</p>
+<p>• Utilize SAS, Excel, and Python to analyze epidemiological data</p>
+<p>• Maintain relationship databases for studies using Microsoft Access</p>
+</div>
+<div id="research-assistant-vanderbilt-institute-of-imaging-science-nashville-tn-_____________-sept-2016-may-2018" class="section level5">
+<h5>Research Assistant, Vanderbilt Institute of Imaging Science, Nashville, TN _____________ Sept 2016 – May 2018</h5>
+<p>• Conducted analysis of data using PRISM software and mapped images to models</p>
+<p>• Reviewed relevant scientific literature in the field of mGluR2 drug discovery for schizophrenia treatment</p>
+<p>• Researched drug mechanism of mGluR2 potentiators: utilized functional MRI scans (cerebral blood volume and BOLD techniques) to analyze the regions engaged by amphetamine and mGluR2 potentiators in rats; accurately followed research protocols to ensure accuracy</p>
+<p>• Worked in the laboratory of Dr. Nellie Byun, Assistant Professor</p>
+</div>
+<div id="radiologic-technical-assistant-wellstar-kennestone-hospital-kennesaw-ga-___________-july-2016-august-2016" class="section level5">
+<h5>Radiologic Technical Assistant, Wellstar Kennestone Hospital, Kennesaw, GA ___________ July 2016 – August 2016</h5>
+<p>• Provided high quality patient care and assisted in transporting X-ray patients for procedures</p>
+<p>• Helped to take X-Rays with bedside mobile units</p>
+</div>
+<div id="public-health-intern-mayor-potencial-el-rodeíto-honduras-___________________________-june-2015-july-2015" class="section level5">
+<h5>Public Health Intern, Mayor Potencial, El Rodeíto, Honduras ___________________________ June 2015 – July 2015</h5>
+<p>• Designed a comprehensive curriculum for Math, Science, and English for 2nd graders based off of Honduran education standards</p>
+<p>• Shadowed the town’s only nurse managing the medical problems of the entire town of about 400</p>
+<p>• Assessed the efficacy of the clinic formulary by reviewing available vaccinations and prescriptions</p>
+<p>• Gathered medical data from local K – 6th graders as well as many infants in surrounding towns</p>
+<p>• Travelled to Cornell University to present findings</p>
+</div>
+</div>
+<div id="publications" class="section level1">
+<h1>PUBLICATIONS:</h1>
+<div id="lecompte-michael.-goldman-connor.-2017-incorporation-of-a-global-surgery-rotation-into-an-academic-general-surgery-residency." class="section level5">
+<h5>LeCompte, Michael. <strong>Goldman, Connor</strong>. 2017 “Incorporation of a Global Surgery Rotation into an Academic General Surgery Residency.”</h5>
+<p>• Determining effects of international surgery rotation on global health orientation</p>
+<p>• Gathered survey data and helped to write publication</p>
+</div>
+</div>
+<div id="volunteer-activitesleadership" class="section level1">
+<h1>VOLUNTEER ACTIVITES/LEADERSHIP:</h1>
+<div id="timmy-global-health-executive-cabinetpublic-relations-chair-_____________________-november-2016-may-2018" class="section level5">
+<h5>Timmy Global Health, Executive Cabinet/Public Relations Chair _____________________ November 2016 – May 2018</h5>
+<p>• Served on Executive Cabinet, Public Relations Chair overseeing use of social media for advertisement</p>
+<p>• Helped organize a fundraising event for international health care</p>
+</div>
+<div id="vanderbilt-student-volunteers-for-science-team-leader-_______________________________-january-2015-may-2018" class="section level5">
+<h5>Vanderbilt Student Volunteers for Science, Team Leader _______________________________ January 2015 – May 2018</h5>
+<p>• Travelled once a week to teach middle school students science lessons</p>
+<p>• Team leader, responsible for communication of lesson plans to a group of volunteers</p>
+</div>
+<div id="camp-kesem-camp-counselor-__________________________________________________________-march-2017-may-2018" class="section level5">
+<h5>Camp Kesem, Camp Counselor __________________________________________________________ March 2017 – May 2018</h5>
+<p>• Trained on managing a camp for 8-16-year-olds with parents affected by cancer</p>
+<p>• Served as a camp counselor for 9 and 10-year-old campers</p>
+<p>• Helped to fundraise to send 1 child to camp for free</p>
+</div>
+<div id="remote-area-medical-spanish-translator-_________________________________________________________-march-2018" class="section level5">
+<h5>Remote Area Medical, Spanish Translator _________________________________________________________ March 2018</h5>
+<p>• Translated for non-English speakers in a large pop-up clinic in Cookeville, Tennessee</p>
+<p>• Collaborated with nurses, dentists, and optometrists to ensure care</p>
+</div>
+<div id="pi-kappa-alpha-fraternity-executive-cabinet-____________________________________________-august-2015-present" class="section level5">
+<h5>Pi Kappa Alpha Fraternity, Executive Cabinet ____________________________________________ August 2015 – present</h5>
+<p>• Served as Executive Cabinet, Scholarship Chair overseeing academic achievement of members</p>
+</div>
+<div id="etowah-high-school-class-president-woodstock-ga-__________________________________________________-may-2014" class="section level5">
+<h5>Etowah High School, Class President, Woodstock, GA __________________________________________________ May, 2014</h5>
+</div>
+</div>
+<div id="skills" class="section level1">
+<h1>SKILLS:</h1>
+<p>Software- SAS (Spring 2019), Microsoft Office, GraphPrism, R Studio, Familiar with STATA</p>
+<p>Languages- Spanish (proficient)</p>
+<p>Others- Collaboration, Team-Building, Laboratory Work, Basic Sciences</p>
+</div>
+<div id="work-experience" class="section level1">
+<h1>WORK EXPERIENCE:</h1>
+<div id="mafiaozas-pizzeria-neighborhood-pub-server-nashville-tn-__________________________-june-2017-may-2018" class="section level5">
+<h5>MAFIAoZA’s Pizzeria &amp; Neighborhood Pub, Server, Nashville, TN __________________________ June 2017 – May 2018</h5>
+</div>
+<div id="ben-jerrys-ice-cream-store-clerk-nashville-tn-_________________________________-march-2015-october-2016" class="section level5">
+<h5>Ben &amp; Jerry’s Ice Cream, Store Clerk, Nashville, TN _________________________________ March 2015 – October 2016</h5>
+</div>
+<div id="johnnys-pizza-busboy-cook-server-woodstock-ga-______________________________________-may-2013-july-2014" class="section level5">
+<h5>Johnny’s Pizza, Busboy/ Cook/ Server, Woodstock, GA ______________________________________ May 2013 – July 2014</h5>
+<p>• Provided high-quality customer service in a fast-paced environment and handled up to $300 per day</p>
+<p>• At Ben &amp; Jerry’s, promoted to shift leader after 6 months and learned advanced management functions; trained new employees; responsible for managing up to $600 in transactions per day</p>
+</div>
+<div id="revision-start-up-founder-woodstock-ga-____________________________________________-june-2016-august-2016" class="section level5">
+<h5>ReVision, Start-Up Founder Woodstock, GA ____________________________________________ June 2016 – August 2016</h5>
+<p>• Launched a college application guidance company with two other colleagues called “ReVision”</p>
+<p>• Met with local high school principals to promote guidance service to students applying to college</p>
+<p>• Helped to design a website and other advertisements for the company</p>
+<p>• Determined pricing and template consultation script</p>
+</div>
+</div>
+<div id="activities" class="section level1">
+<h1>ACTIVITIES:</h1>
+<p>• Vanderbilt Club Crew Team (Fall 2014)</p>
+<p>• Relay for Life (Spring 2015)</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

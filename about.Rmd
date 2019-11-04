@@ -1,0 +1,26 @@
+---
+title: "A Brief History"
+output: html_document
+---
+
+##### I am from a town just outside Atlanta, Georgia. 
+
+<img src = "photos/ga.jpg" style = "width: 75%">
+
+##### I attended Vanderbilt University in Nashville, Tennessee for my undergraduate degree in Biology and Spanish.
+
+<img src = "photos/vandy.png" style = "width: 75%">
+
+##### I visited some amazing places throughout my college career!
+
+### El Rodieto, Honduras
+
+<img src = "photos/donkey.jpg" style = "height: 50%">
+
+### Cliffs of Moher, Ireland
+
+<img src = "photos/ireland.jpg" style = "width: 75%">
+
+#### And now I'm here in NYC!
+
+<img src = "photos/ny.jpg" style = "width: 75%">

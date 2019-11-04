@@ -1,0 +1,88 @@
+---
+title: "Data Breakdown"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+
+library(flexdashboard)
+library(readr)
+library(dplyr)
+library(plotly)
+library(tidyverse)
+library(plyr)
+library(p8105.datasets)
+set.seed(1)
+data("rest_inspec")
+reviews <- rest_inspec %>%
+  sample_n(5000)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+ChartB <- reviews %>%
+  filter (
+    boro != 0
+  ) %>%
+  drop_na() %>%
+  ggplot(aes(x = grade)) +
+  geom_bar() +
+  theme_classic() + 
+  labs(
+    title = "Restaraunts Mapped by Coordinates and Grade"
+  ) + 
+  facet_grid(~boro)
+
+ggplotly(ChartB)
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+chartA <- reviews %>%
+  filter (
+    boro != 0
+  ) %>%
+  drop_na() %>%
+   ggplot(aes(x = boro, y = score)) + 
+     geom_violin(aes(fill = boro), color = "blue", alpha = .5) + 
+     theme(legend.position = "bottom") + 
+  labs(
+    title = "Distribution of Scores by Boro (lower score is better)"
+  )
+  
+ggplotly(chartA)
+
+```
+
+### Chart C
+
+```{r}
+ChartC <- reviews %>%
+  filter (
+    boro != 0,
+    cuisine_description %in% c("American", "Pizza", "Mexican", "Chinese", "Pizza/Italian", "Korean", "Japanese")
+  ) %>%
+  drop_na() %>%
+   ggplot(aes(x = cuisine_description)) + 
+     geom_bar(color = "blue", alpha = .5) + 
+     theme(legend.position = "bottom", axis.text.x = element_text(angle = 90)) + 
+  labs(
+    title = "Distribution of Scores by Boro (lower score is better)"
+  ) +
+  facet_grid(~boro)
+
+ggplotly(ChartC)
+```
+
